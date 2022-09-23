@@ -16,6 +16,8 @@ class ServiceController < ApplicationController
     redirect_to '/hello/index'
   end
 
+  private
+
   def callback_params
     params.permit(:state, :code).to_hash.merge({ rails_session: session }).symbolize_keys
   end

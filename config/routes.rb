@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'model/authorize'
+  get 'model/callback'
   get 'service/authorize'
   get 'service/callback'
 
