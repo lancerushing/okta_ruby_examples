@@ -20,5 +20,10 @@ module OktaExamples
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.x.okta.issuer = ENV['OKTA_ISSUER']
+    config.x.okta.client_id = ENV['OKTA_CLIENT_ID']
+    config.x.okta.client_secret = ENV['OKTA_CLIENT_SECRET']
+    config.x.okta.redirect_uri = ENV['OKTA_REDIRECT_URI']
   end
 end
